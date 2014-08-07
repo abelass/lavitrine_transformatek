@@ -1,0 +1,24 @@
+[(#REM) Les sites]
+<B_sites>
+<div class="liste sites">
+        <h2 class="h2"><:sur_web:></h2>
+        <ul class="liste-items">
+                <BOUCLE_sites(SITES) {par num nom_site}>
+                <li class="item short">
+				<article class="entry site">
+					<h3 class="h3-like entry-title"><a href="#ENV{url,#URL_SITE}" rel="bookmark">[(#LOGO_SYNDIC_RUBRIQUE|image_reduire{#ENV{largeur_logo,-1},#ENV{hauteur_logo,-1}}|responsive_logo)]#NOM_SITE<span
+						class="read-more hide"><i class="icon-chevron-right" title="<:zcore:lire_la_suite|attribut_html:><:zcore:lire_la_suite_de|attribut_html:> &laquo;[(#TITRE|attribut_html)]&raquo;"></i></span></a></h3>
+					<p class="publication">[<i class="icon-user"></i> <:par_auteur:> (#LESAUTEURS)</span>]</p>
+					<BOUCLE_auteur(AUTEURS){id_syndic}{tout}>
+						<p class="email">#EMAIL</p>
+						<p class="mobile">#MOBILE</p>						
+					</BOUCLE_auteur>
+					<p class="url_site"><a href="#ENV{url,#URL_SITE}" rel="bookmark">#URL_SITE</a></p>				
+					[<div class="#EDIT{intro} introduction entry-content">(#DESCRIPTIF|couper{#ENV{coupe,300}})</div>]
+				</article>
+
+                </li>
+                </BOUCLE_sites>
+        </ul>
+</div>
+</B_sites>
