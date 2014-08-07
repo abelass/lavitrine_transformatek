@@ -1,0 +1,3 @@
+.sites .short .entry > *:not(.entry-title) {
+    display: block;
+}
