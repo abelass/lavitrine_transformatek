@@ -10,8 +10,8 @@
 						class="read-more hide"><i class="icon-chevron-right" title="<:zcore:lire_la_suite|attribut_html:><:zcore:lire_la_suite_de|attribut_html:> &laquo;[(#TITRE|attribut_html)]&raquo;"></i></span></a></h3>
 					<p class="publication">[<i class="icon-user"></i> <:par_auteur:> (#LESAUTEURS)</span>]</p>
 					<BOUCLE_auteur(AUTEURS){id_syndic}{tout}>
-						<p class="email">#EMAIL</p>
-						<p class="mobile">#MOBILE</p>						
+						[<p class="email">(#EMAIL)</p>]
+						[<p class="mobile">(#MOBILE)</p>]					
 					</BOUCLE_auteur>
 					<p class="url_site"><a href="#ENV{url,#URL_SITE}" rel="bookmark">#URL_SITE</a></p>				
 					[<div class="#EDIT{intro} introduction entry-content">(#DESCRIPTIF|couper{#ENV{coupe,300}})</div>]
