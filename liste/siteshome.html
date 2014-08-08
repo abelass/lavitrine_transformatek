@@ -8,13 +8,13 @@
 				<article class="entry site">
 					<h3 class="h3-like entry-title"><a href="#ENV{url,#URL_SITE}" rel="bookmark">[(#LOGO_SYNDIC_RUBRIQUE|image_reduire{#ENV{largeur_logo,-1},#ENV{hauteur_logo,-1}}|responsive_logo)]#NOM_SITE<span
 						class="read-more hide"><i class="icon-chevron-right" title="<:zcore:lire_la_suite|attribut_html:><:zcore:lire_la_suite_de|attribut_html:> &laquo;[(#TITRE|attribut_html)]&raquo;"></i></span></a></h3>
-					<p class="publication">[<i class="icon-user"></i> <:par_auteur:> (#LESAUTEURS)</span>]</p>
+					[<div class="#EDIT{intro} introduction entry-content">(#DESCRIPTIF|couper{#ENV{coupe,300}})</div>]	
+					<div class="publication">[<i class="icon-user"></i> <:par_auteur:> (#LESAUTEURS)</span>]</div>
 					<BOUCLE_auteur(AUTEURS){id_syndic}{tout}>
-						[<p class="email">(#EMAIL)</p>]
-						[<p class="mobile">(#MOBILE)</p>]					
+						[<div class="email"><a href="mailto:#EMAIL">(#EMAIL)</a></div>]
+						[<div class="mobile">(#MOBILE)</div>]					
 					</BOUCLE_auteur>
-					<p class="url_site"><a href="#ENV{url,#URL_SITE}" rel="bookmark">#URL_SITE</a></p>				
-					[<div class="#EDIT{intro} introduction entry-content">(#DESCRIPTIF|couper{#ENV{coupe,300}})</div>]
+					<div class="url_site"><a href="#ENV{url,#URL_SITE}" rel="bookmark">#URL_SITE</a></div>				
 				</article>
 
                 </li>
