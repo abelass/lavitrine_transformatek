@@ -4,9 +4,22 @@
     margin: 0 auto;
     max-width: 1000px;
     width: 100%;
+	background:url(images/background2.jpg) #A98436 no-repeat left top;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
 }
 
-.main,.vcard{width:57%; max-width: 700px; margin:0 auto}
+.main,.vcard{
+	width:57%; 
+	max-width: 700px; 
+	margin:0 auto; 
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 1em 1.5em;
+	}
+
+.publication .vcard{background-color:transparent}
 
 /*Header*/
 
@@ -14,9 +27,11 @@ h1#logo_site_spip{display:none}
 
 .accueil{text-align:center;width:100%;}
 
-.accueil .spip_logos{float:none}
+.accueil .spip_logos{float:none;margin:0}
 
 .header .span3{display:none}
+
+.span9{margin:0}
 
 /*Homepage*/
 .sites .short .entry > *:not(.entry-title) {
