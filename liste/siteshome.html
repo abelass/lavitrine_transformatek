@@ -11,7 +11,7 @@
 					[<div class="#EDIT{intro} introduction entry-content">(#DESCRIPTIF|couper{#ENV{coupe,300}})</div>]	
 					<div class="publication">[<i class="icon-user"></i> <:par_auteur:> (#LESAUTEURS)</span>]</div>
 					<BOUCLE_auteur(AUTEURS){id_syndic}{tout}>
-						[<div class="email"><a href="mailto:#EMAIL">(#EMAIL)</a></div>]
+						<div class="email">[(#VAL{<a href="mailto:[(#EMAIL)]">[(#EMAIL)]</a>}|mailcrypt)]</div>						    
 						[<div class="mobile">(#MOBILE)</div>]					
 					</BOUCLE_auteur>
 					<div class="url_site"><a href="#ENV{url,#URL_SITE}" rel="bookmark">#URL_SITE</a></div>				
