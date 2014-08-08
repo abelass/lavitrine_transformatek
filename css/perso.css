@@ -1,9 +1,12 @@
 /*Blocks principales*/
 .span8 {
+ float: none;
+    margin: 0 auto;
+    max-width: 1000px;
     width: 100%;
 }
 
-.main{width:57%; max-width: 700px; margin:0 auto}
+.main,.vcard{width:57%; max-width: 700px; margin:0 auto}
 
 /*Header*/
 
@@ -19,3 +22,5 @@ h1#logo_site_spip{display:none}
 .sites .short .entry > *:not(.entry-title) {
     display: block;
 }
+
+.rubrique_home .sites h2 {display:none}
