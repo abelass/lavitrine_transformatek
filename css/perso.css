@@ -1,3 +1,21 @@
+/*Blocks principales*/
+.span8 {
+    width: 100%;
+}
+
+.main{width:57%; max-width: 700px; margin:0 auto}
+
+/*Header*/
+
+h1#logo_site_spip{display:none}
+
+.accueil{text-align:center;width:100%;}
+
+.accueil .spip_logos{float:none}
+
+.header .span3{display:none}
+
+/*Homepage*/
 .sites .short .entry > *:not(.entry-title) {
     display: block;
 }
