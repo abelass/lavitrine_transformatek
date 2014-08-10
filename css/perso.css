@@ -60,6 +60,10 @@ h1#logo_site_spip{display:none}
 	#content section:first-child{
 	width:70%; 
 	}
+	.footer .colophon {
+    padding-right: 0.5em;
+     padding-left: 0.5em;   
+}
 }
 
 @media (max-width: 480px){
