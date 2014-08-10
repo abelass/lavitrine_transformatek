@@ -1,3 +1,6 @@
+<BOUCLE_background(DATA){source tableau, #LISTE{background5.jpg,background4.jpg}}{par hasard}{0,1}>
+	#SET{background,#VALEUR}
+</BOUCLE_background>
 <body>
 	<div class="page[ (#ENV{home}|oui)home]">
 		<div class="container">
@@ -9,7 +12,7 @@
 			</div>]
 
 			<div class="row">
-				<div class="content span8 " id="content">
+				<div class="content span8 " id="content" style="background-image: url(#CHEMIN{css/images/#GET{background}})">
 					<INCLURE{fond=content/#ENV{type-page},env} />
 				</div>
 				[(#REM) deactivated
