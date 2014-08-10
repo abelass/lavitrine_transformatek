@@ -1,17 +1,22 @@
+/*Titraille*/
+
+h3, .h3{font-size:1.5em}
+
 /*Blocks principales*/
 .span8 {
  float: none;
     margin: 0 auto;
     max-width: 1000px;
     width: 100%;
-	background:url(images/background2.jpg) #A98436 no-repeat left top;
+	background-repeat:no-repeat center top;
+	background-position:center top;	
     -webkit-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
 }
 
-.main,.vcard{
+#content section:first-child{
 	width:57%; 
 	max-width: 700px; 
 	margin:0 auto; 
@@ -21,6 +26,7 @@
 
 .publication .vcard{background-color:transparent}
 
+ 
 /*Header*/
 
 h1#logo_site_spip{display:none}
@@ -39,3 +45,8 @@ h1#logo_site_spip{display:none}
 }
 
 .rubrique_home .sites h2 {display:none}
+
+/*Listes*/
+
+.liste-items .item {
+    border-top: 1px solid #4d4d4d;}
