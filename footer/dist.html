@@ -1,5 +1,4 @@
-<p class="colophon">
-<BOUCLE_annee(ARTICLES){par date}{0,1}>[(#DATE|annee)]</BOUCLE_annee>-</B_annee>[(#DATE|annee) ] &mdash; #NOM_SITE_SPIP - Rue du Fort 7, 1060 Saint-Gilles, [(#VAL{<a href="mailto:[(#EMAIL_WEBMASTER)]">[(#EMAIL_WEBMASTER)]</a>}|mailcrypt)], GSM +32 495 10 28 18<br />
+<p class="colophon"> 
 [(#SESSION{id_auteur}|oui)<a href="#URL_LOGOUT" rel="nofollow"><:icone_deconnecter:></a>][
 (#SESSION{id_auteur}|non)<a href="[(#URL_PAGE{login}|parametre_url{url,#SELF|parametre_url{url,''}})]" rel="nofollow" class='login_modal'><:lien_connecter:></a>][<span class="sep">
 (#AUTORISER{ecrire})| </span><a href="#EVAL{_DIR_RESTREINT_ABS}"><:espace_prive:></a>] | <a href="http://www.spip.net/" title="<:site_realise_avec_spip:>"><:site_realise_avec_spip:></a>  <:par_auteur:> <a href="http://websimple.be/">Web Simple</a>
