@@ -83,9 +83,15 @@ img.left{margin: 0 0.5em 0.5em 0}
 	.footer .colophon {
     padding-right: 0.5em;
      padding-left: 0.5em;   
-}
-}
+	}
+.main #outils {
+    background-color: #ffffff;
 
+    position: relative;
+    right: 0;
+    top: 0;
+	}
+}
 @media (max-width: 480px){
 	#content section:first-child{
 	width:85%; 
