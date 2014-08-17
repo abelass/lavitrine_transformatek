@@ -4,9 +4,9 @@
         <h2 class="h2"><:sur_web:></h2>
         <ul class="liste-items">
                 <BOUCLE_sites(SITES) {par num nom_site}>
-                <li class="item short">
-				<article class="entry site">
-					<h3 class="h3"><a href="[(#ID_SYNDIC|generer_url_entite{site})]" rel="bookmark" title="<:zcore:lire_la_suite|attribut_html:><:zcore:lire_la_suite_de|attribut_html:> &laquo;[(#NOM_SITE|attribut_html)]&raquo;">[(#LOGO_SYNDIC_RUBRIQUE|image_reduire{#ENV{largeur_logo,-1},#ENV{hauteur_logo,-1}}|responsive_logo)]#NOM_SITE</a></h3>
+                <li class="item">
+				<article class="site">
+					<h3 class="h3"><a href="[(#ID_SYNDIC|generer_url_entite{site})]" rel="bookmark" title="<:zcore:lire_la_suite|attribut_html:><:zcore:lire_la_suite_de|attribut_html:> &laquo;[(#NOM_SITE|attribut_html)]&raquo;">#NOM_SITE</a></h3>
 					[<div class="#EDIT{intro} introduction entry-content">(#DESCRIPTIF|couper{#ENV{coupe,160}, <a title="<:zcore:lire_la_suite|attribut_html:><:zcore:lire_la_suite_de|attribut_html:> &laquo;[(#NOM_SITE|attribut_html)]&raquo;" href="[(#ID_SYNDIC|generer_url_entite{site})]"> (...)</a>})</div>]	
 					<div class="publication">[<i class="icon-user"></i> <:par_auteur:> (#LESAUTEURS)</span>]</div>
 					<BOUCLE_auteur(AUTEURS){id_syndic}{tout}>
