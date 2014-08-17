@@ -1,7 +1,7 @@
 <paquet
 	prefix="lavitrine_transformatek"
 	categorie="squelette"
-	version="1.0.2"
+	version="1.0.3"
 	etat="dev"
 	compatibilite="[3.0.16;3.0.*]"
 	logo="prive/themes/spip/images/lavitrine_transformatek-64.png"
