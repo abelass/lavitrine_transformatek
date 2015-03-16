@@ -17,7 +17,8 @@ h3, .h3{font-size:1.5em}
     position:relative;
 }
 
-#content section:first-child{
+#content section .main{
+	box-sizing: border-box;
 	width:57%; 
 	max-width: 700px; 
 	margin:0 auto; 
@@ -54,19 +55,38 @@ h1#logo_site_spip{display:none}
     margin: 0;
     opacity: 0.78;
     position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+/*
+ * Forms
+ */
+
+/*Newsletter*/
+.newsletter{
+    position: relative;
     right: 0;
-    top: 0;
-    width:calc(43% - 3em);
-    .formulaire_spip{
+    top: 100px;
+    width: 21.5%;
+    margin:0;
+    z-index: 200;
+    background-color: rgba(255, 255, 255, 0.8);
+	.formulaire_spip{
     	padding:0;
+    	background-color:inherit;
     	input,label{font-size:0.8em;}
     }
     .boutons {
+    	background-color:inherit;
     	margin:0;
     	padding:0;
+    	input{width: 100%;}
     }
+	.email.text {
+    width: calc(100% - 12px);
 }
-
+}
 
 /*Listes*/
 
@@ -82,10 +102,10 @@ h1#logo_site_spip{display:none}
 
    
 /*Socialtags*/
-div.socialtags {
+/*div.socialtags {
     clear:none;
     ul{float:left;}
-}
+}*/
    
 /*Divers*/
 img.left{margin: 0 0.5em 0.5em 0} 
@@ -104,14 +124,27 @@ img.left{margin: 0 0.5em 0.5em 0}
      padding-left: 0.5em;   
 	}
 .main #outils {
-    position: relative;
     right: 0;
     top: 0;
-    width:50%;
 	}
 }
 @media (max-width: 480px){
-	#content section:first-child{
-	width:85%; 
+	
+	
+	#content section .main{
+		width:85%
 	}
+	.main #outils {
+	position:static;
+	}
+	
+	.newsletter{
+    width: 85%;
+    float: none !important;
+    margin: 0 auto;
+    top: 0;
+    .formulaire_spip{
+    	padding:0 1em 1em
+    }
+   }
 }
